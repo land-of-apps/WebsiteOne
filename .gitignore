@@ -95,3 +95,9 @@ certbot.log
 .vscode/**/*
 
 db/schema.rb
+
+
+vendor/bundle/
+features/support/fixtures/req_cache/
+features/support/fixtures/cassettes/
+

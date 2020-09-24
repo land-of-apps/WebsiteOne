@@ -1,8 +1,10 @@
 # Turn on validation, so we can use import:
 version: ~> 1.0
 
+services:
+- postgresql
+
 before_script:
-- bundle install
 - npm install
 - npm install bower
 - bundle exec rails bd:migrate

@@ -1,6 +1,9 @@
 # Turn on validation, so we can use import:
 version: ~> 1.0
 
+rvm:
+- 2.5.1
+
 services:
 - postgresql
 

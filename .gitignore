@@ -51,7 +51,6 @@ doc/**/*
 .rvmrc.env
 
 .rvmrc
-.ruby-version
 .ruby-gemset
 
 # Ignore Precompiled Assets

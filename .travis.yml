@@ -14,7 +14,7 @@ before_install:
 before_script:
 - npm install
 - npm install bower
-- bundle exec rails bd:migrate
+- bundle exec rails db:migrate
 - bundle exec rake db:setup
 
 script:

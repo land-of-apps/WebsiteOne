@@ -2,6 +2,7 @@
 version: ~> 1.0
 
 before_script:
+- bundle install
 - npm install
 - npm install bower
 - bundle exec rails bd:migrate

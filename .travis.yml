@@ -4,11 +4,11 @@ version: ~> 1.0
 rvm:
 - 2.5.1
 
-import:
-- land-of-apps/land-of-apps:travis/ruby-imports.yml
-
 services:
 - postgresql
+
+before_install:
+- gem install bundler
 
 before_script:
 - npm install

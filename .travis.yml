@@ -1,0 +1,13 @@
+# Turn on validation, so we can use import:
+version: ~> 1.0
+
+before_script:
+- npm install
+- npm install bower
+- bundle exec rails bd:migrate
+- bundle exec rake db:setup
+
+script:
+- bundle exec rake spec
+- bundle exec rake jasmine:ci
+- bundle exec rake cucumber

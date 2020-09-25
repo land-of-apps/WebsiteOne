@@ -51,7 +51,6 @@ doc/**/*
 .rvmrc.env
 
 .rvmrc
-.ruby-version
 .ruby-gemset
 
 # Ignore Precompiled Assets
@@ -96,3 +95,9 @@ certbot.log
 .vscode/**/*
 
 db/schema.rb
+
+
+vendor/bundle/
+features/support/fixtures/req_cache/
+features/support/fixtures/cassettes/
+

@@ -1,4 +1,16 @@
 GIT
+  remote: git://github.com/applandinc/appmap-ruby.git
+  revision: 31e44740df536a6aa4025d7f75b62f3742ba3455
+  branch: master
+  specs:
+    appmap (0.35.1)
+      activesupport
+      faraday
+      gli
+      parser
+      rack
+
+GIT
   remote: https://github.com/AgileVentures/acts_as_follower.git
   revision: 894b44451c609a9facfdb8a15bca4fc17ea1eb76
   specs:
@@ -717,6 +729,7 @@ DEPENDENCIES
   addressable
   airbrake
   apipie-rails
+  appmap!
   awesome_print
   better_errors
   binding_of_caller

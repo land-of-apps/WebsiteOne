@@ -4,12 +4,11 @@ version: ~> 1.0
 rvm:
 - 2.5.1
 
+import:
+- land-of-apps/land-of-apps:travis/ruby-imports.yml
+
 services:
 - postgresql
-
-before_install:
-- yes | gem update --system --force
-- gem install bundler:1.17.2
 
 before_script:
 - npm install
@@ -19,6 +18,6 @@ before_script:
 - bundle exec rake db:setup
 
 script:
-- bundle exec rake spec
-- bundle exec rake jasmine:ci
-- bundle exec rake cucumber || true
+- APPMAP=true bundle exec rake spec
+- APPMAP=true bundle exec rake jasmine:ci
+- APPMAP=true bundle exec rake cucumber || true

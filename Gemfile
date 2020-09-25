@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 ruby '2.5.1'
 
+gem 'appmap', github: 'applandinc/appmap-ruby', branch: 'master'
+
 gem 'rails', '5.2.3'
 gem 'acts-as-taggable-on'
 gem 'acts_as_follower', git: 'https://github.com/AgileVentures/acts_as_follower.git'
